@@ -8,4 +8,7 @@ const userController = require('../controllers/userController'); // Importa o co
 // POST /api/auth/register
 router.post('/register', userController.registerUser);
 
+// Rota para login de usuário
+router.post('/login', userController.loginUser); // Nova rota para login
+
 module.exports = router; // Exporta o router para ser usado em index.js
