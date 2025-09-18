@@ -14,7 +14,7 @@ const dashboardRoutes = require('./routes/dashboardRoutes');
 // Em desenvolvimento, permitir qualquer origem pode ser ok (para localhost).
 // Em produção, você deve restringir a origens específicas (ex: 'https://seusite.com').
 app.use(cors({
-  origin: 'https://sistema-autenticacao-frontend.vercel.app/login', // Permite requisições APENAS do seu frontend Angular
+  origin: 'https://sistema-autenticacao-frontend.vercel.app', // Permite requisições APENAS do seu frontend Angular
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Métodos HTTP permitidos
   credentials: true, // Permite o envio de cookies de sessão, cabeçalhos de autorização, etc.
   optionsSuccessStatus: 204 // Retorna 204 para OPTIONS (preflight) com sucesso
